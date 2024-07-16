@@ -1,6 +1,8 @@
+/** eslint-disable tailwindcss/no-custom-classname */
+import React from "react";
 import heroImg from "../../assets/images/hero.png";
 
-const SectionHero = () => {
+const SectionHero: React.FC = () => {
   return (
     <>
       <section
@@ -18,6 +20,7 @@ const SectionHero = () => {
             </p>
             <a
               href=""
+              // eslint-disable-next-line tailwindcss/no-custom-classname
               className="bg-main text-small rounded-[10px] px-3 py-2 text-white"
             >
               Gabung Grup Telegram

@@ -1,4 +1,6 @@
-const SectionCollab = () => {
+import React from 'react';
+
+const SectionCollab: React.FC = () => {
   return (
     <>
       <section className="mt-16 flex justify-center bg-[#EA222B]">

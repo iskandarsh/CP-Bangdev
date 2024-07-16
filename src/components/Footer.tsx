@@ -1,6 +1,7 @@
+/** eslint-disable tailwindcss/no-custom-classname */
 import logo from "../assets/images/logo.png";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="my-8 flex justify-center">
       <div className="flex w-10/12 justify-between">
@@ -19,6 +20,7 @@ const Footer = () => {
             </li>
             <li>
               <a href="">
+                // eslint-disable-next-line tailwindcss/no-custom-classname
                 <i className="bi bi-telegram" /> t.me/bangkalandeveloper
               </a>
             </li>

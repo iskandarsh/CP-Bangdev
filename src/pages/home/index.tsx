@@ -1,10 +1,11 @@
-import heroImg from "../../assets/images/hero.png";
+import React from "react";
+
 import SectionCollab from "./SectionCollab";
 import SectionEvent from "./SectionEvent";
 import SectionHero from "./SectionHero";
 import SectionService from "./SectionService";
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
     <>
       <SectionHero />

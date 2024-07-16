@@ -1,7 +1,10 @@
-import imgEvent from "../../assets/images/real_event.jpeg";
-import { CardEvent } from "../../components/Card";
+/** eslint-disable tailwindcss/no-custom-classname */
+import React from "react";
 
-const SectionEvent = () => {
+import { CardEvent } from "@components/Card";
+import imgEvent from "../../assets/images/real_event.jpeg";
+
+const SectionEvent: React.FC = () => {
   const dataEvent = [
     {
       title: "Mini Bootcamp",
@@ -29,6 +32,7 @@ const SectionEvent = () => {
     <>
       <section className="mt-20" id="event">
         <p className="text-center text-2xl font-semibold">
+          // eslint-disable-next-line tailwindcss/no-custom-classname
           Kegiatan di <span className="text-main">BangkalanDev</span>
         </p>
         <div className="mt-28 rounded-[10px] bg-[#EA222B]">
