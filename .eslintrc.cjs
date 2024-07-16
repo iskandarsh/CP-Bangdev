@@ -39,7 +39,7 @@ module.exports = {
     'linebreak-style': 0,
     'lines-between-class-members': 0,
     'prettier/prettier': [2, { endOfLine: 'auto' }],
-    'max-len': [2, { code: 125, ignoreComments: true, ignoreTrailingComments: true }],
+    'max-len': [0, { code: 125, ignoreComments: true, ignoreTrailingComments: true }],
     'no-nested-ternary': 0,
     'no-shadow': 0,
     'no-underscore-dangle': 0,
@@ -84,7 +84,7 @@ module.exports = {
     'react/jsx-no-useless-fragment': 0,
     'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx', '.js', '.jsx'] }],
     'react/jsx-props-no-spreading': 0,
-    'react/react-in-jsx-scope': 2,
+    'react/react-in-jsx-scope': 0,
     'react/function-component-definition': [2, { namedComponents: 'arrow-function' }],
     'react-hooks/exhaustive-deps': 0,
 

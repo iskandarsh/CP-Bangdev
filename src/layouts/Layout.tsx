@@ -1,16 +1,14 @@
-import Footer from "@components/Footer";
-import Navbar from "@components/Navbar";
-import React from "react";
+import React from 'react';
 
+import Footer from '@components/Footer';
+import Navbar from '@components/Navbar';
 
-
-const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+// eslint-disable-next-line react/prop-types
+const Layout: React.FC<{ component: React.ReactNode }> = ({ component }) => {
   return (
     <>
       <Navbar />
-      <main>
-        {children}
-      </main>
+      <main>{component}</main>
       <Footer />
     </>
   );

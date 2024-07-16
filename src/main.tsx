@@ -1,13 +1,9 @@
-/** eslint-disable react-refresh/only-export-components */
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './index.css';
 
-
-
-// eslint-disable-next-line react-refresh/only-export-components
 const Main: React.FC = () => {
   return (
     <BrowserRouter>
@@ -15,7 +11,6 @@ const Main: React.FC = () => {
     </BrowserRouter>
   );
 };
-
 
 const container = document.getElementById('root');
 

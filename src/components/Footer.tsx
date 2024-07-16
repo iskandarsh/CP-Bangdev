@@ -1,5 +1,6 @@
+/* eslint-disable react/react-in-jsx-scope */
 /** eslint-disable tailwindcss/no-custom-classname */
-import logo from "../assets/images/logo.png";
+import logo from '../assets/images/logo.png';
 
 const Footer: React.FC = () => {
   return (
@@ -20,7 +21,6 @@ const Footer: React.FC = () => {
             </li>
             <li>
               <a href="">
-                // eslint-disable-next-line tailwindcss/no-custom-classname
                 <i className="bi bi-telegram" /> t.me/bangkalandeveloper
               </a>
             </li>
@@ -30,9 +30,8 @@ const Footer: React.FC = () => {
           <div>
             <img src={logo} width="40%" alt="" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur distinctio, id dolores corrupti, ea minus dolorem
-              suscipit cum a et voluptatum libero veritatis vero!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio, id dolores corrupti, ea minus
+              dolorem suscipit cum a et voluptatum libero veritatis vero!
             </p>
           </div>
         </div>
