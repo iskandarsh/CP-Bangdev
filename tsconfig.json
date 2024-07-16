@@ -22,9 +22,7 @@
     "baseUrl": "./",
     "outDir": "./dist",
     "paths": {
-      "@*": [
-        "./src/*"
-      ]
+      "@*": ["./src/*"]
     },
     "types": [
       "node",
