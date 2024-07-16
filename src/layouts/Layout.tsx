@@ -1,13 +1,15 @@
 import Footer from "@components/Footer";
 import Navbar from "@components/Navbar";
-import { Outlet } from "react-router-dom";
+import React from "react";
 
-const Layout = () => {
+
+
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <>
       <Navbar />
       <main>
-        <Outlet />
+        {children}
       </main>
       <Footer />
     </>
