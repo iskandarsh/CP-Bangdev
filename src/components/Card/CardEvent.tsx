@@ -1,4 +1,15 @@
-const CardEvent = ({ title, img, date, content }) => {
+/** eslint-disable tailwindcss/no-custom-classname */
+/** eslint-disable tailwindcss/enforces-shorthand */
+import React from 'react';
+
+interface ICardEventProps {
+  title: string;
+  img: string;
+  date: string;
+  content: string
+}
+
+const CardEvent: React.FC<ICardEventProps> = ({ title, img, date, content }) => {
   return (
     <div className="flex w-full justify-center md:w-3/12">
       <div className="max-w-sm rounded-lg border-none bg-white drop-shadow-md dark:border-gray-700 dark:bg-gray-800">
@@ -12,9 +23,11 @@ const CardEvent = ({ title, img, date, content }) => {
             </h5>
           </a>
           <small>
+            // eslint-disable-next-line tailwindcss/no-custom-classname
             <i className="bi bi-calendar2-week" /> {date}
           </small>
-          <p className=" mb-3 mt-3 font-normal text-gray-700 dark:text-gray-400">
+          // eslint-disable-next-line tailwindcss/enforces-shorthand
+          <p className=" my-3 font-normal text-gray-700 dark:text-gray-400">
             {content}
           </p>
           <a
