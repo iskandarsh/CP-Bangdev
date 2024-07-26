@@ -1,46 +1,44 @@
-import imgEvent from "../../assets/images/real_event.jpeg";
-import { CardEvent } from "../../components/Card";
+/** eslint-disable tailwindcss/no-custom-classname */
+import React from 'react';
 
-const SectionEvent = () => {
+import { CardEvent } from '@components/Card';
+import imgEvent from '../../assets/images/real_event.jpeg';
+
+const SectionEvent: React.FC = () => {
   const dataEvent = [
     {
-      title: "Mini Bootcamp",
+      id: 1,
+      title: 'Mini Bootcamp',
       img: imgEvent,
-      date: "9 Juli 2023",
-      content:
-        "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      date: '9 Juli 2023',
+      content: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
     },
     {
-      title: "Mini Bootcamp",
+      id: 2,
+      title: 'Mini Bootcamp',
       img: imgEvent,
-      date: "9 Juli 2023",
-      content:
-        "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      date: '9 Juli 2023',
+      content: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
     },
     {
-      title: "Mini Bootcamp",
+      id: 3,
+      title: 'Mini Bootcamp',
       img: imgEvent,
-      date: "9 Juli 2023",
-      content:
-        "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.",
+      date: '9 Juli 2023',
+      content: 'Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.',
     },
   ];
+
   return (
     <>
       <section className="mt-20" id="event">
         <p className="text-center text-2xl font-semibold">
-          Kegiatan di <span className="text-main">BangkalanDev</span>
+          <span className="text-main">BangkalanDev</span>
         </p>
         <div className="mt-28 rounded-[10px] bg-[#EA222B]">
           <div className="relative top-[-60px] flex flex-col justify-center gap-5 md:flex-row">
-            {dataEvent.map((item, index) => (
-              <CardEvent
-                key={index}
-                title={item.title}
-                img={item.img}
-                date={item.date}
-                content={item.content}
-              />
+            {dataEvent.map((item) => (
+              <CardEvent key={item.id} title={item.title} img={item.img} date={item.date} content={item.content} />
             ))}
           </div>
         </div>

@@ -1,6 +1,8 @@
-import logo from "../assets/images/logo.png";
+/* eslint-disable react/react-in-jsx-scope */
+/** eslint-disable tailwindcss/no-custom-classname */
+import logo from '../assets/images/logo.png';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="my-8 flex justify-center">
       <div className="flex w-10/12 justify-between">
@@ -28,9 +30,8 @@ const Footer = () => {
           <div>
             <img src={logo} width="40%" alt="" />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Consectetur distinctio, id dolores corrupti, ea minus dolorem
-              suscipit cum a et voluptatum libero veritatis vero!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur distinctio, id dolores corrupti, ea minus
+              dolorem suscipit cum a et voluptatum libero veritatis vero!
             </p>
           </div>
         </div>
