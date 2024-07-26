@@ -1,4 +1,16 @@
-const CardEvent = ({ title, img, date, content }) => {
+/* eslint-disable jsx-a11y/control-has-associated-label */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+
+import React from 'react';
+
+interface ICardEventProps {
+  title: string;
+  img: string;
+  date: string;
+  content: string;
+}
+
+const CardEvent: React.FC<ICardEventProps> = ({ title, img, date, content }) => {
   return (
     <div className="flex w-full justify-center md:w-3/12">
       <div className="max-w-sm rounded-lg border-none bg-white drop-shadow-md dark:border-gray-700 dark:bg-gray-800">
@@ -7,16 +19,12 @@ const CardEvent = ({ title, img, date, content }) => {
         </a>
         <div className="p-5">
           <a href="#">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              {title}
-            </h5>
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
           </a>
           <small>
             <i className="bi bi-calendar2-week" /> {date}
           </small>
-          <p className=" mb-3 mt-3 font-normal text-gray-700 dark:text-gray-400">
-            {content}
-          </p>
+          <p className=" my-3 font-normal text-gray-700 dark:text-gray-400">{content}</p>
           <a
             href="#"
             className="inline-flex items-center rounded-lg bg-[#EA222B] px-3 py-2 text-center text-sm font-medium text-white"

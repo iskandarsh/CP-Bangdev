@@ -1,10 +1,9 @@
-import heroImg from "../../assets/images/hero.png";
-import SectionCollab from "./SectionCollab";
-import SectionEvent from "./SectionEvent";
-import SectionHero from "./SectionHero";
-import SectionService from "./SectionService";
+import SectionCollab from './SectionCollab';
+import SectionEvent from './SectionEvent';
+import SectionHero from './SectionHero';
+import SectionService from './SectionService';
 
-const Home = () => {
+const HomePage: React.FC = () => {
   return (
     <>
       <SectionHero />
@@ -15,4 +14,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
