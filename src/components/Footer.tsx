@@ -1,6 +1,4 @@
-/* eslint-disable react/react-in-jsx-scope */
-/** eslint-disable tailwindcss/no-custom-classname */
-import logo from '../assets/images/logo.png';
+import logo from '@assets/images/logo/logo.png';
 
 const Footer: React.FC = () => {
   return (

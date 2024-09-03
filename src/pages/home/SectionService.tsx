@@ -1,10 +1,10 @@
-import { CardService } from '@components/Card';
+import { CardService } from '@components/Cards';
 import React from 'react';
-import imgService1 from '../../assets/images/computer_logo.png';
-import imgService3 from '../../assets/images/design_logo.png';
-import imgService4 from '../../assets/images/joki_logo.png';
-import imgService2 from '../../assets/images/mobile_logo.png';
-import imgService5 from '../../assets/images/skripsi_logo.png';
+import imgService1 from '@assets/images/logo/computer_logo.png';
+import imgService3 from '@assets/images/logo/design_logo.png';
+import imgService4 from '@assets/images/logo/joki_logo.png';
+import imgService2 from '@assets/images/logo/mobile_logo.png';
+import imgService5 from '@assets/images/logo/skripsi_logo.png';
 
 const SectionService: React.FC = () => {
   const dataSercive = [

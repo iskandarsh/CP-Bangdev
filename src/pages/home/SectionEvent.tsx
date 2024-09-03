@@ -1,7 +1,7 @@
 /** eslint-disable tailwindcss/no-custom-classname */
 import React from 'react';
 
-import { CardEvent } from '@components/Card';
+import { CardEvent } from '@components/Cards';
 import imgEvent from '../../assets/images/real_event.jpeg';
 
 const SectionEvent: React.FC = () => {

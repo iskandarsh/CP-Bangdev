@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/images/logo.png';
+import logo from '@assets/images/logo/logo.png';
 
 const Navbar: React.FC = () => {
   const [toggle, setToggle] = useState(false);
