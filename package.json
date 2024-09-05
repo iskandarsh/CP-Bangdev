@@ -3,16 +3,21 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+"scripts": {
+    "-------------------------------- LINT ----": "----",
+    "format": "prettier --write \"src/**/*.ts{,x}\"",
+    "check": "tsc -v && tsc --noEmit",
+    "lint": "tsc --noEmit && eslint \"src/**/*.ts{,x}\"",
+    "fix": "npm run lint --fix && npm run format",
+    "-------------------------------- TOOL ----": "----",
+    "nuke": "rimraf dist && rimraf package-lock.json && rimraf node_modules && npm install",
+    "clear": "rimraf dist",
+    "prepare": "husky install",
+    "-------------------------------- DEV  ----": "----",
     "dev": "vite",
+    "-------------------------------- PROD ----": "----",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "format": "prettier . --write",
-    "format:check": "prettier . --check",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "typecheck": "tsc --noEmit",
-    "prepare": "husky install"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@tabler/icons-react": "^3.14.0",
