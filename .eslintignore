@@ -10,3 +10,4 @@ coverage
 vite.config.ts
 prettier.config.js
 tailwind.config.js
+postcss.config.js
