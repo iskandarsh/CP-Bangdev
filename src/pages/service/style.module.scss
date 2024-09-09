@@ -1,0 +1,14 @@
+.container {
+  height: max-content;
+  width: 100%;
+
+  .why-us {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .img {
+      width: 40%;
+    }
+  }
+}

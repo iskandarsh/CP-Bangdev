@@ -59,9 +59,9 @@ const Navbar: React.FC = () => {
               </li>
               <li>
                 <span
-                  className={`block cursor-pointer rounded px-2 py-2 ${isActive('/') ? 'text-red-600' : 'text-gray-900'} md:dark:hover:text-white-500 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-red-400 md:dark:hover:bg-transparent`}
+                  className={`block cursor-pointer rounded px-2 py-2 ${isActive('/services') ? 'text-red-600' : 'text-gray-900'} md:dark:hover:text-white-500 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-red-400 md:dark:hover:bg-transparent`}
                   aria-current="page"
-                  onClick={() => navigate('/')}
+                  onClick={() => navigate('/services')}
                 >
                   Services
                 </span>
