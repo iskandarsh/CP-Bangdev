@@ -1,0 +1,39 @@
+.offering {
+    background-image: url('../../assets/images/offering_bg.png');
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    height: 35em;
+    justify-content: space-between;
+    padding: 5em 7em;
+    width: 100%;
+
+    .title {
+      color: black;
+      font-weight: bold;
+      font-size: 30px;
+      width: 284px;
+    }
+
+    .offering-card {
+      width: 60%;
+
+      .stack {
+        display: flex;
+        height: 100%;
+        width: 100%;
+
+        .card1 {
+          height: 220px;
+          left: 0;
+          top: 0;
+        }
+
+        .card2 {
+          height: 220px;
+          padding-left: 4em;
+          padding-top: 6em;
+        }
+      }
+    }
+  }

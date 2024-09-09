@@ -1,0 +1,27 @@
+.banner {
+  align-items: center;
+  background-image: url('../../assets/images/service_banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 25em;
+  justify-content: center;
+  width: 100%;  
+
+  .title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    z-index: 10;
+  }
+
+  .description {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 2em 16em;
+    text-align: center;
+    z-index: 10;
+  }
+}
